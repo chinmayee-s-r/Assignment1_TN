@@ -1,0 +1,120 @@
+#list
+
+list1=[0,23,397.18,False,"cone"]
+print(list1)
+
+#index number
+print(list1[4], list1[-3])
+
+#updating
+list1[-2]=False
+print("After updating : ", list1)
+
+#add
+list1.append("wow")
+print("The final list is", list1)
+
+#insert
+list1.insert(0,56.7)
+list1.insert(-3,"shallow")
+print("New list : ", list1)
+
+#remove
+list1.remove("wow")
+print("Final values are : ", list1)
+
+#delete
+del list1[3], list1[-2]
+print("After deleting : ", list1)
+del list1[3], list1[-4]
+print("One more : ", list1)
+
+##insert
+a=[34,54,64]
+list1.insert(2,a)
+print("Ultimately : ", list1)
+
+
+
+
+
+#tuple : Unmutable
+
+tuple1=(3, 27.27, "why", True)
+print(tuple1)
+print("No. of elements is", len(tuple1))
+
+#update
+tuple1(2)="hehe"
+print(tuple1)
+
+
+
+
+
+#dictionary
+
+mydic={
+    "Username" : "ccoew123",
+    "Password" : "euu321",
+    "Year" : 2022
+}
+print(mydic)
+
+
+#update
+mydic={
+    "Username" : "Chinu",
+    "Pass" : "euu123",
+    "Pass" : "wow",
+    "Year" : 2023
+}
+print("Updated dictionary : ", mydic)
+
+
+##update
+mydic["Username"]=["ccoew","comp",625]
+print(mydic)
+
+#remove
+mydic.pop("Year")
+print("The new dictionary : ", mydic)
+
+
+
+
+
+
+#set
+
+myset={1, 34, 9, 5, 78, 9}
+print(myset)
+
+#add
+myset.add(100)
+print("The data : ", myset)
+
+#union & intersection
+
+set1={0,45,68,666,1}
+set2={0,66,95,45,1}
+
+set3=set1.union(set2)
+print(set3)
+
+set4=set1.intersection(set2)
+print(set4)
+
+print("Union of the sets : ", set1|set2)
+
+print("Intersection of sets : ", set1&set2)
+
+set5={1,2,3,4}
+set6={5,6,7,8}
+print(set5|set6)
+print(set5&set6)
+
+#frozenset
+
+a=frozenset(["Data",34])
+print(a)
